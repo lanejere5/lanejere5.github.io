@@ -1,4 +1,4 @@
-# [Jeremy Lane](https://lanej5.github.io/)
+# [Jeremy Lane](https://lanejere5.github.io/)
 
 
 ## Curriculum Vitae
