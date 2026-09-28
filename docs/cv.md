@@ -85,7 +85,7 @@
 - **2017** Linear Algebra I, Calculus I.
 - **2016** Linear Algebra I. 
 
-* [Sample teaching material](https://github.com/lanej5/math).
+[Sample teaching material](https://github.com/lanej5/math).
 ---
 
 [Github](https://github.com/lanej5), [ArXiv](https://arxiv.org/a/lane_j_2.html), [Google Scholar](https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en), [LinkedIn](https://linkedin.com/in/lanej5)
