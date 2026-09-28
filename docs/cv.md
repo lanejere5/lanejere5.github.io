@@ -6,7 +6,8 @@
 
 ### Experience
 
-- **Applied Scientist II**, Amazon, New York, NY. *Aug 2022 -- Current*
+- **Applied Scientist III**, Amazon, New York, NY. *April 2026 -- Current*
+- **Applied Scientist II**, Amazon, New York, NY. *Aug 2022 -- March 2026*
 - **Postdoctoral Fellow: Geometry and Topology**, McMaster University, Department of Mathematics and Statistics, Hamilton, ON. *Sept 2019 -- Aug 2022*
     - Advisor: Prof. Megumi Harada.
 - **Postdoctoral Fellow**, The Fields Institute for Research in Mathematical Sciences, Toronto, ON. *Jan 2020 -- June 2020*
@@ -31,30 +32,9 @@
     - TRIUMF particle accelerator student researcher. Developed Monte Carlo simulations of photon detectors with C++ and ROOT.
     - 4.0 GPA
 
-### Selected Research Papers
+### Research Papers
 
-*Note: All co-authorships are in alphebetical order, representing equal contributions from co-authors.*
-
-[1] Alekseev, Hoffman, Lane, Li. Action-angle coordinates on coadjoint orbits and multiplicity free spaces from partial tropicalization. Advances in Mathematics. 2023.
-
-[2] Lane. Local normal forms for multiplicity free U(n) actions on coadjoint orbits. Pacific Journal of Mathematics. 2021.
-
-[3] Carlson, Lane. The topology of Gelfand-Zeitlin fibers. In submission. 2021. 
-
-[4] Alekseev, Hoffman, Lane, Li. Concentration of symplectic volumnes on Poisson homogeneous spaces. Journal of Symplectic Geometry. 2020.
-
-[5] Hoffman, Lane. Stratified Gradient Hamiltonian Vector Fields and Collective Integrable Systems. In submission.
-2020.
-
-[7] Lane. The geometric structure of symplectic contraction. International Mathematics Research Notices. 2020.
-
-[8] Alekseev, Lane, Li. The U(n) Gelfand–Zeitlin system as a tropical limit of Ginzburg–Weinstein diffeomorphisms. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences. 2018.
-
-[9] Lane. Convexity and Thimm’s trick. Transformation Groups. 2018.
-
-[10] Lane. Topological monodromy of an integrable Heisenberg spin chain. SIGMA Symmetry, Integrability and Geometry: Methods and Applications. 2015.
-
-[Google Scholar](https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en), [ArXiv](https://arxiv.org/a/lane_j_2.html)
+[Google Scholar](https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en)
 
 
 ### Selected Invited Presentations
@@ -93,7 +73,7 @@
 - **2020** Organized an [online international research workshop](http://www.fields.utoronto.ca/activities/19-20/lie-theory) with 25 speakers and more than 200 registered participants in 2 months in response to conference cancellations at the beginning of the covid-19 pandemic. Secured support from the Fields Institute. 
 - **2015 - 2020** Chaired and organized research seminars at the University of Toronto, University of Geneva, and the Fields Institute.
 - **2015, 2016** Lead learning sessions at Canada Math Camp, University of Toronto.
-- **2009 - 2012** Volunteer and executive of the  University of Regina chapter of Engineers Without Borders Canada.
+- **2009 - 2012** Volunteer and executive of the University of Regina chapter of Engineers Without Borders Canada.
 
 ### Teaching
 
@@ -105,8 +85,7 @@
 - **2017** Linear Algebra I, Calculus I.
 - **2016** Linear Algebra I. 
 
-*A sample teaching materials is available [on github](https://github.com/lanej5/math). A sample of teaching feedback is available on [RateMyProf](https://www.ratemyprofessors.com/professor/2520420).*
-
+* [Sample teaching material](https://github.com/lanej5/math).
 ---
 
 [Github](https://github.com/lanej5), [ArXiv](https://arxiv.org/a/lane_j_2.html), [Google Scholar](https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en), [LinkedIn](https://linkedin.com/in/lanej5)
