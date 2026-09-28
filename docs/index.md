@@ -4,23 +4,18 @@
 
 ## About Me
 
-I'm a mathematician and applied scientist. 
-- At Amazon I combine machine learning and econometrics to deliver scalable ad measurement and targeting solutions.
-- I have 5 years experience as a math researcher, solving problems in differential geometry and mathematical physics and publishing in top journals.
+I'm a research scientist and applied scientist.
+- At Amazon I develop foundation models for event data and AI agents for advertisers.
+- I have 5 yoe as a math researcher post doctorate, specializing in differential geometry and mathematical physics.
 
 
-## Machine Learning and Data Science
+## AI and Deep Learning
 
-At Amazon I'm working on ad measurement solutions combining 1P and 3P datasets, panel data, machine learning and econometrics.
-
-In my first year I independently delivered a scalable, end-to-end ML system for ad targeting through all phases of the product life-cycle (development, testing, product launch, and product iteration). In 2023 the product is on track to 2x its revenue goals and 5x its adoption goals.
+At Amazon I have shipped multiple production ML systems including ad measurement products, representation learning models, targeting models, foundation models and AI agents. I have built foundation models for predicting causal ad effects, prototyped PB scale data pipelines that informed Ads-wide data strategy, shipped graph neural networks that learn from billions of vertices and trillions of edges, and driven over 700MM ad revenue. I have lead multiple science teams to deliver AI agents and evaluations for production and external customers resulting in three WW launches with millions of users.
 
 ## Mathematics
 
-My research in symplectic geometry focuses on connections between classical and quantum mechanics via geometric quantization.  I study classical commutative integrable systems that arise from non-commuting Hamiltonian Lie group actions. In this work I combine tools from geometry, topology, Lie theory, analysis, and representation theory.  My papers have appeared in top journals such as the Journal of Symplectic Geometry and Advances in Mathematics.
-
-I've taught topics such as vector calculus, linear algebra, graph theory and combinatorics, and scientific computing labs.
-
+My research in symplectic geometry focused on connections between classical and quantum mechanics via geometric quantization.  I studied constructions of classical commutative integrable systems from non-commuting Hamiltonian Lie group actions. This work combined tools from geometry, topology, Lie theory, analysis, and representation theory.
 
 ---
 
