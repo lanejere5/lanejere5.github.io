@@ -220,9 +220,10 @@ if __name__ == '__main__':
 
     # Favicon: the exact dodecahedron drawing from the CV, on the page background.
     parts = draw('dodecahedron', SOLIDS['dodecahedron'], 50, 50, 40, seed=4)
-    # Colours follow the site's light and dark themes (src/styles/global.css).
-    style = ('<style>rect{fill:#f7f1e5}g{stroke:#1d1a15}'
-             '@media (prefers-color-scheme:dark){rect{fill:#131312}g{stroke:#f0eee9}}</style>')
+    # Colours are the site's themes (src/styles/global.css), inverted so the icon
+    # stands out against the browser chrome: dark tile in light mode, light tile in dark.
+    style = ('<style>rect{fill:#131312}g{stroke:#f0eee9}'
+             '@media (prefers-color-scheme:dark){rect{fill:#f7f1e5}g{stroke:#1d1a15}}</style>')
     favicon = svg(parts, 100, 100).replace(' stroke="#000"', '').replace(
         '  <g fill', f'  {style}\n  <rect width="100" height="100" rx="20"/>\n  <g fill', 1)
     (OUT.parent / 'favicon.svg').write_text(favicon)
