@@ -203,6 +203,34 @@ h2 {
   margin: 3rem 0 0.875rem;
 }
 
+/* Each CV section break is a small etching of a Platonic solid (scripts/generate-solids.py). */
+.cv h2:not(:first-child)::before {
+  content: '';
+  display: block;
+  width: 4.25rem;
+  height: 4.25rem;
+  margin: 0.5rem auto 2.5rem;
+  background-color: var(--body);
+  -webkit-mask: var(--solid) center / contain no-repeat;
+  mask: var(--solid) center / contain no-repeat;
+}
+
+.cv h2:nth-of-type(2) { --solid: url('/solids/cube.svg'); }
+.cv h2:nth-of-type(3) { --solid: url('/solids/octahedron.svg'); }
+.cv h2:nth-of-type(4) { --solid: url('/solids/tetrahedron.svg'); }
+.cv h2:nth-of-type(5) { --solid: url('/solids/dodecahedron.svg'); }
+.cv h2:nth-of-type(6) { --solid: url('/solids/icosahedron.svg'); }
+
+/* The final break shows all five together. */
+.cv h2:last-of-type {
+  --solid: url('/solids/all.svg');
+}
+
+.cv h2:last-of-type::before {
+  width: 20rem;
+  max-width: 100%;
+}
+
 h3 {
   font-size: 1.25rem;
   margin: 2.25rem 0 0.625rem;
