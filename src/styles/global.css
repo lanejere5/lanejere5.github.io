@@ -309,7 +309,7 @@ hr {
   margin-top: 1rem;
 }
 
-.cv li > em {
+.cv > ul > li > em {
   display: block;
   font-size: 1.0625rem;
 }
