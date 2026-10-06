@@ -14,8 +14,9 @@
   color-scheme: light dark;
 }
 
+/* Dark follows the system unless the visitor picked a theme with the toggle. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #131312;
     --fg: #f0eee9;
     --body: #cfccc4;
@@ -23,7 +24,23 @@
     --accent: #93a8f5;
     --border: #2a2926;
     --selection: #2c3558;
+    color-scheme: dark;
   }
+}
+
+:root[data-theme='dark'] {
+  --bg: #131312;
+  --fg: #f0eee9;
+  --body: #cfccc4;
+  --muted: #8f8c84;
+  --accent: #93a8f5;
+  --border: #2a2926;
+  --selection: #2c3558;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
 }
 
 * {
@@ -96,6 +113,66 @@ main,
 .site-header nav a:hover,
 .site-header nav a[aria-current='page'] {
   color: var(--fg);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: -0.25rem -0.375rem -0.25rem 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--fg);
+  background: var(--border);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Show the icon for the theme a click switches to. */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme='dark'] .theme-toggle .icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .theme-toggle .icon-sun {
+    display: block;
+  }
+
+  :root:not([data-theme='light']) .theme-toggle .icon-moon {
+    display: none;
+  }
 }
 
 /* Content */
