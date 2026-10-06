@@ -85,59 +85,64 @@ Peer-reviewed internal Amazon conferences; not publicly available.
 
 ### 2021
 
-- [Minicourse on Gelfand-Tsetlin systems and Poisson-Lie groups](https://sites.google.com/view/poissonrep2021/home), NRU HSE Moscow.
-- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer21/abs/pdf/sg-jl.pdf).
-- Edinburgh Geometry (EDGE) seminar, Edinburgh Hodge Institute.
+- **[Minicourse on Gelfand–Tsetlin Systems and Poisson–Lie Groups](https://sites.google.com/view/poissonrep2021/home)**, NRU HSE Moscow.
+- **[Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer21/abs/pdf/sg-jl.pdf)**, Online.
+- **Edinburgh Geometry (EDGE) Seminar**, Hodge Institute, University of Edinburgh.
 
 ### 2020
 
-- Topology and Geometry seminar, Imperial College London.
-- [Symplectic and Poisson geometry Seminar](https://sites.google.com/view/jpalmer/spg-seminar), University of Illinois at Urbana-Champaign.
-- [Symplectic Joint Seminar in Rio](https://sites.google.com/matematica.ufrj.br/semsimprio), IMPA, UFRJ, UFF and PUC-Rio.
-- [Algebraic Topology Seminar](https://www.math.princeton.edu/events/canonical-bases-toric-degenerations-and-collective-integrable-systems-2020-11-12t180000), Princeton.
-- [Workshop on Torus Actions in Topology](http://www.fields.utoronto.ca/activities/19-20/toric-torus), The Fields Institute.
-- [Gone Fishing Meeting on Poisson Geometry](https://sites.google.com/georgiasouthern.edu/gonefishing2020), Georgia Southern University.
-- [Lie Groups Seminar](https://pi.math.cornell.edu/m/event-list-p/liegroups), Cornell University.
-- [Geometry, Physics, and Representation Theory Seminar](http://mathserver.neu.edu/~robin/Seminars/GPRT/index.html), Northeastern University.
-- [Geometry and Physics Seminar](https://cmsa.fas.harvard.edu/event/7-7-2020-geometry-and-physics-seminar/), Center Of Mathematical Sciences And Applications, Harvard.
-- Toric Topology Research Seminar, The Fields Institute.
+- **Topology and Geometry Seminar**, Imperial College London.
+- **[Symplectic and Poisson Geometry Seminar](https://sites.google.com/view/jpalmer/spg-seminar)**, University of Illinois at Urbana-Champaign.
+- **[Symplectic Joint Seminar in Rio](https://sites.google.com/matematica.ufrj.br/semsimprio)**, IMPA, UFRJ, UFF and PUC-Rio.
+- **[Algebraic Topology Seminar](https://www.math.princeton.edu/events/canonical-bases-toric-degenerations-and-collective-integrable-systems-2020-11-12t180000)**, Princeton University.
+- **[Workshop on Torus Actions in Topology](http://www.fields.utoronto.ca/activities/19-20/toric-torus)**, The Fields Institute.
+- **[Gone Fishing Meeting on Poisson Geometry](https://sites.google.com/georgiasouthern.edu/gonefishing2020)**, Georgia Southern University.
+- **[Lie Groups Seminar](https://pi.math.cornell.edu/m/event-list-p/liegroups)**, Cornell University.
+- **[Geometry, Physics, and Representation Theory Seminar](http://mathserver.neu.edu/~robin/Seminars/GPRT/index.html)**, Northeastern University.
+- **[Geometry and Physics Seminar](https://cmsa.fas.harvard.edu/event/7-7-2020-geometry-and-physics-seminar/)**, Center of Mathematical Sciences and Applications, Harvard University.
+- **Toric Topology Research Seminar**, The Fields Institute.
 
 ### 2019
 
-- Finite dimensional systems in geometry and mathematical physics, Shanghai Jiao Tong University.
-- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer19/abs/emd#jl).
+- **Finite Dimensional Systems in Geometry and Mathematical Physics**, Shanghai Jiao Tong University.
+- **[Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer19/abs/emd#jl)**, Regina, SK.
 
 ### 2018
 
-- Workshop on cluster algebras, crystal bases, and Poisson geometry, University of Hong Kong.
-- [Geometric aspects of momentum maps and integrability](https://medialibrary.uantwerpen.be/oldcontent/personalpage33566/files/Ascona2018/talk-abstracts/abstract-lane.pdf), Ascona, Switzerland.
-- Algebraic Structures in Topology and Geometry (conference), Riederalp, Switzerland.
-- Symplectic Seminar. Centre Interuniversitaire de Recherches Géométrie et Topologie, Montreal.
-- Symplectic Geometry Seminar, University of Toronto.
-- Interactions between symplectic geometry, combinatorics, and number theory (seminar), University of Cologne.
+- **Workshop on Cluster Algebras, Crystal Bases, and Poisson Geometry**, University of Hong Kong.
+- **[Geometric Aspects of Momentum Maps and Integrability](https://medialibrary.uantwerpen.be/oldcontent/personalpage33566/files/Ascona2018/talk-abstracts/abstract-lane.pdf)**, Ascona, Switzerland.
+- **Algebraic Structures in Topology and Geometry**, Riederalp, Switzerland.
+- **Symplectic Seminar**, Centre Interuniversitaire de Recherches en Géométrie et Topologie, Montréal.
+- **Symplectic Geometry Seminar**, University of Toronto.
+- **Interactions between Symplectic Geometry, Combinatorics, and Number Theory**, University of Cologne.
 
 ### 2016
 
-- Canadian Mathematical Society Winter Meeting.
-- Integrable Systems, Ascona, Switzerland.
-- Topology seminar, Cornell University.
+- **Canadian Mathematical Society Winter Meeting**, Niagara Falls, ON.
+- **Integrable Systems**, Ascona, Switzerland.
+- **Topology Seminar**, Cornell University.
 
 ### 2015
 
-- Canadian Mathematical Society Winter Meeting.
-- Workshop on Recent Developments in the Geometry and Combinatorics of Hessenberg Varieties, The Fields Institute.
+- **Canadian Mathematical Society Winter Meeting**, Montréal, QC.
+- **Workshop on Recent Developments in the Geometry and Combinatorics of Hessenberg Varieties**, The Fields Institute.
 
 ### 2014
 
-- Canadian Mathematical Society Winter Meeting.
+- **Canadian Mathematical Society Winter Meeting**, Hamilton, ON.
 
 ## Leadership and Volunteer Work
 
-- **2020 - 2021** Supervised an undergraduate Summer research project resulting in [a publication](https://msp.org/involve/2022/15-5/involve-v15-n5-p04-p.pdf).
-- **2020** Organized an [online international research workshop](http://www.fields.utoronto.ca/activities/19-20/lie-theory) with 24 speakers and more than 200 registered participants in 2 months in response to conference cancellations at the beginning of the covid-19 pandemic. Secured support from the Fields Institute. 
-- **2015 - 2020** Chaired and organized research seminars at the University of Toronto, University of Geneva, and the Fields Institute.
-- **2015, 2016** Lead learning sessions at Canada Math Camp, University of Toronto.
-- **2009 - 2012** Volunteer and executive of the University of Regina chapter of Engineers Without Borders Canada.
+- **Undergraduate Research Supervisor**, McMaster University. *2020 – 2021*
+    - Supervised a summer research project that resulted in [a publication](https://msp.org/involve/2022/15-5/involve-v15-n5-p04-p.pdf).
+- **Workshop Organizer**, The Fields Institute. *2020*
+    - Organized an [online international research workshop](http://www.fields.utoronto.ca/activities/19-20/lie-theory) with 24 speakers and more than 200 registered participants.
+    - Put together in two months in response to conference cancellations at the start of the COVID-19 pandemic, with support from the Fields Institute.
+- **Seminar Organizer**, University of Toronto, University of Geneva, and The Fields Institute. *2015 – 2020*
+    - Chaired and organized research seminars.
+- **Session Leader**, Canada Math Camp, University of Toronto. *2015, 2016*
+    - Led learning sessions for high school students.
+- **Volunteer and Executive Member**, Engineers Without Borders Canada, University of Regina chapter. *2009 – 2012*
 
 ## Teaching
 
