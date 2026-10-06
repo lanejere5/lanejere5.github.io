@@ -42,7 +42,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://username.github.io
+      url: https://lanejere5.github.io
     runs-on: ubuntu-latest
     needs: build
     steps:
