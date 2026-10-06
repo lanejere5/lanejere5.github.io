@@ -23,13 +23,8 @@ class: cv
 - **PhD, Mathematics**, University of Toronto, Toronto, ON *2017*
     - Advisor: Prof. Yael Karshon
     - Thesis: *On the topology of collective integrable systems*
-    - $78,000 CAD funding
-    - 4.0 GPA
 - **MSc, Mathematics**, University of Toronto, Toronto, ON *2013*
-    - $17,500 CAD funding
-    - 3.96 GPA
 - **BSc Honours, Mathematics (High Honours)**, University of Regina, Regina, SK *2012*
-    - 4.0 GPA
 
 ## Papers
 
