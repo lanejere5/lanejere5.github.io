@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Jeremy Lane
 
 - [Curriculum Vitae](cv.md)
