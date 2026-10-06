@@ -1,6 +1,7 @@
 ---
 title: Curriculum Vitae
 ---
+## Jeremy Lane
 
 ### Experience
 
