@@ -156,7 +156,9 @@ Peer-reviewed internal Amazon conferences; not publicly available.
 
 ### University of Geneva
 
-- Complex analysis, general mathematics, programming labs in MATLAB, Maple, and R.
+- Complex Analysis.
+- General Mathematics.
+- Scientific Programming.
 
 ### University of Toronto
 

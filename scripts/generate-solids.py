@@ -215,6 +215,6 @@ if __name__ == '__main__':
               ('dodecahedron', 350), ('icosahedron', 450)]
     row = []
     for i, (name, x) in enumerate(layout):
-        row += draw(name, SOLIDS[name], x, 50, 36, seed=i + 11)
+        row += draw(name, SOLIDS[name], x, 50, 40, seed=i + 11)
     (OUT / 'all.svg').write_text(svg(row, 500, 100))
     print('wrote', ', '.join(sorted(p.name for p in OUT.glob('*.svg'))))
