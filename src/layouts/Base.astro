@@ -1,0 +1,77 @@
+---
+import { siArxiv, siGithub, siGooglescholar } from 'simple-icons';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/newsreader/opsz-italic.css';
+import '../styles/global.css';
+
+const { frontmatter } = Astro.props;
+const siteName = 'Jeremy Lane';
+const pageTitle =
+  frontmatter?.title && frontmatter.title !== 'Home'
+    ? `${frontmatter.title} | ${siteName}`
+    : siteName;
+const description =
+  frontmatter?.description ?? 'Jeremy Lane: applied scientist and mathematician.';
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/cv/', label: 'CV' },
+];
+const path = Astro.url.pathname;
+
+// Simple Icons no longer ships LinkedIn, so this is a hand-drawn "in" mark.
+const linkedinPath =
+  'M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z' +
+  'M6 7.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0-3 0z' +
+  'M6 10h3v8H6z' +
+  'M11 10h2.8v1.2c.5-.8 1.5-1.4 2.8-1.4 2.2 0 3.4 1.4 3.4 3.9V18h-3v-3.8c0-1.1-.4-1.8-1.4-1.8s-1.6.7-1.6 1.8V18h-3z';
+
+const social = [
+  { href: 'https://github.com/lanej5', label: 'GitHub', icon: siGithub.path },
+  { href: 'https://arxiv.org/a/lane_j_2.html', label: 'arXiv', icon: siArxiv.path },
+  {
+    href: 'https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en',
+    label: 'Google Scholar',
+    icon: siGooglescholar.path,
+  },
+  { href: 'https://linkedin.com/in/lanej5', label: 'LinkedIn', icon: linkedinPath },
+];
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-name" href="/">{siteName}</a>
+      <nav>
+        {nav.map(({ href, label }) => (
+          <a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a>
+        ))}
+      </nav>
+    </header>
+    <main class={frontmatter?.class}>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <nav aria-label="Elsewhere">
+        {social.map(({ href, label, icon }) => (
+          <a href={href} rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill-rule="evenodd"><path d={icon} /></svg>
+            {label}
+          </a>
+        ))}
+      </nav>
+      <p>© {year} {siteName}</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+:root {
+  --bg: #f7f1e5;
+  --fg: #1d1a15;
+  --body: #3b362e;
+  --muted: #6f685b;
+  --accent: #2f4ea8;
+  --border: #e2d9c7;
+  --selection: #e8dcbf;
+
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-serif: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
+  --measure: 40rem;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131312;
+    --fg: #f0eee9;
+    --body: #cfccc4;
+    --muted: #8f8c84;
+    --accent: #93a8f5;
+    --border: #2a2926;
+    --selection: #2c3558;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Header */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.site-name {
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a[aria-current='page'] {
+  color: var(--fg);
+}
+
+/* Content */
+
+main {
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--fg);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.75rem;
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 3rem 0 0.875rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 2.25rem 0 0.625rem;
+}
+
+main > :first-child {
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 1.25rem;
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+em {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+ul ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.6rem;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 0.15rem;
+  top: 0.8em;
+  width: 0.4rem;
+  height: 1px;
+  background: var(--muted);
+}
+
+ul ul li + li {
+  margin-top: 0.25rem;
+}
+
+ul ul li {
+  font-size: 1.0625rem;
+  color: var(--muted);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* CV: entries instead of bullets */
+
+.cv ul ul {
+  padding-left: 0;
+}
+
+/* Top-level entries drop the dash; their details keep it. */
+.cv > ul > li {
+  padding-left: 0;
+}
+
+.cv > ul > li::before {
+  content: none;
+}
+
+.cv > ul > li + li {
+  margin-top: 1rem;
+}
+
+.cv li > em {
+  display: block;
+  font-size: 1.0625rem;
+}
+
+.cv ul ul {
+  margin-top: 0.125rem;
+}
+
+.cv ul ul li + li {
+  margin-top: 0.125rem;
+}
+
+/* Footer */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.75rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.site-footer nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-footer nav a:hover {
+  color: var(--fg);
+}
+
+.site-footer nav svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .site-name {
+    font-size: 1.625rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+    margin-top: 2.5rem;
+  }
+}

@@ -1,10 +1,7 @@
 ---
+layout: ../layouts/Base.astro
 title: Home
 ---
-
-# Jeremy Lane
-
-- [Curriculum Vitae](cv.md)
 
 ## About Me
 
@@ -20,7 +17,3 @@ At Amazon I have shipped multiple production ML systems including ad measurement
 ## Mathematics
 
 My research in symplectic geometry focused on connections between classical and quantum mechanics via geometric quantization.  I studied constructions of classical commutative integrable systems from non-commuting Hamiltonian Lie group actions. This work combined tools from geometry, topology, Lie theory, analysis, and representation theory.
-
----
-
-[Github](https://github.com/lanej5), [ArXiv](https://arxiv.org/a/lane_j_2.html), [Google Scholar](https://scholar.google.ca/citations?user=atcyxVwAAAAJ&hl=en), [LinkedIn](https://linkedin.com/in/lanej5)
