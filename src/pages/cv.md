@@ -6,17 +6,17 @@ class: cv
 
 ## Experience
 
-- **Senior Applied Scientist**, Amazon Ads, New York, NY *April 2026 – Present*
-- **Applied Scientist**, Amazon Ads, New York, NY *Aug 2022 – March 2026*
+- **Senior Applied Scientist**, Amazon, Ads, New York, NY *April 2026 – Present*
+- **Applied Scientist**, Amazon, Ads, New York, NY *Aug 2022 – March 2026*
 - **Postdoctoral Fellow**, McMaster University, Department of Mathematics and Statistics, Hamilton, ON *Sept 2019 – Aug 2022*
     - Advisor: Prof. Megumi Harada
     - Cross-appointed to the Fields Institute for the [Thematic Program on Toric Topology and Polyhedral Products](http://www.fields.utoronto.ca/activities/19-20/toric), Jan – June 2020
 - **Postdoctoral Fellow**, University of Geneva, Section of Mathematics, Geneva, Switzerland *Sept 2017 – Aug 2019*
     - Advisor: Prof. Anton Alekseev
-- **Graduate Researcher, Course Instructor**, University of Toronto, Department of Mathematics *2012 – 2017*
-- **Research Assistant**, University of Regina *May 2012 – Aug 2012*
-- **Research Assistant**, University of Regina *May 2011 – Aug 2011*
-- **Research Assistant**, TRIUMF particle accelerator, Vancouver, BC *Jan 2010 – April 2010*
+- **Graduate Researcher, Course Instructor**, University of Toronto, Department of Mathematics, Toronto, ON *2012 – 2017*
+- **Research Assistant**, University of Regina, Department of Mathematics and Statistics, Regina, SK *May 2012 – Aug 2012*
+- **Research Assistant**, University of Regina, Department of Mathematics and Statistics, Regina, SK *May 2011 – Aug 2011*
+- **Research Assistant**, TRIUMF, Vancouver, BC *Jan 2010 – April 2010*
 
 ## Education
 
