@@ -85,4 +85,4 @@ class: cv
 - **2017** Linear Algebra I, Calculus I.
 - **2016** Linear Algebra I. 
 
-[Sample teaching material](https://github.com/lanej5/math).
+[Sample teaching material](https://github.com/lanejere5/math).
