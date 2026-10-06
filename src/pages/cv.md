@@ -33,7 +33,7 @@ class: cv
 
 ## Papers
 
-Authors are listed alphabetically in the mathematics papers, as is the convention. Full list on [Google Scholar](https://scholar.google.com/citations?user=atcyxVwAAAAJ), [arXiv](https://arxiv.org/a/lane_j_2.html), and [Amazon Science](https://www.amazon.science/author/jeremy-lane).
+Authors are listed alphabetically in the mathematics papers, as is the convention. Also on [Google Scholar](https://scholar.google.com/citations?user=atcyxVwAAAAJ) and [arXiv](https://arxiv.org/a/lane_j_2.html).
 
 ### Industry research
 
@@ -83,33 +83,53 @@ Peer-reviewed internal Amazon conferences; not publicly available.
 
 ## Selected Invited Presentations
 
-- [Minicourse on Gelfand-Tsetlin systems and Poisson-Lie groups](https://sites.google.com/view/poissonrep2021/home), NRU HSE Moscow. 2021.
-- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer21/abs/pdf/sg-jl.pdf). 2021.
-- Edinburgh Geometry (EDGE) seminar, Edinburgh Hodge Institute. 2021. 
-- Topology and Geometry seminar, Imperial College London. 2020. 
-- [Symplectic and Poisson geometry Seminar](https://sites.google.com/view/jpalmer/spg-seminar), University of Illinois at Urbana-Champaign. 2020. 
-- [Symplectic Joint Seminar in Rio](https://sites.google.com/matematica.ufrj.br/semsimprio), IMPA, UFRJ, UFF and PUC-Rio. 2020.
-- [Algebraic Topology Seminar](https://www.math.princeton.edu/events/canonical-bases-toric-degenerations-and-collective-integrable-systems-2020-11-12t180000), Princeton. 2020.
-- [Workshop on Torus Actions in Topology](http://www.fields.utoronto.ca/activities/19-20/toric-torus), The Fields Institute. 2020.
-- [Gone Fishing Meeting on Poisson Geometry](https://sites.google.com/georgiasouthern.edu/gonefishing2020), Georgia Southern University. 2020.
-- [Lie Groups Seminar](https://pi.math.cornell.edu/m/event-list-p/liegroups),  Cornell University. 2020.
-- [Geometry, Physics, and Representation Theory Seminar](http://mathserver.neu.edu/~robin/Seminars/GPRT/index.html), Northeastern University. 2020.
--  [Geometry and Physics Seminar](https://cmsa.fas.harvard.edu/event/7-7-2020-geometry-and-physics-seminar/), Center Of Mathematical Sciences And Applications, Harvard.
-- Toric Topology Research Seminar, The Fields Institute. 2020.
-- Finite dimensional systems in geometry and mathematical physics, Shanghai Jiao Tong University. 2019.
-- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer19/abs/emd#jl). 2019.
-- Workshop on cluster algebras, crystal bases, and Poisson geometry, University of Hong Kong. 2018.
-- [Geometric aspects of momentum maps and integrability](https://medialibrary.uantwerpen.be/oldcontent/personalpage33566/files/Ascona2018/talk-abstracts/abstract-lane.pdf), Ascona, Switzerland. 2018.
-- Algebraic Structures in Topology and Geometry (conference), Riederalp, Switzerland. 2018.
-- Symplectic Seminar. Centre Interuniversitaire de Recherches Géométrie et Topologie, Montreal. 2018.
-- Symplectic Geometry Seminar, University of Toronto. 2018.
-- Interactions between symplectic geometry, combinatorics, and number theory (seminar), University of Cologne. 2018.
-- Canadian Mathematical Society Winter Meeting. 2016.
-- Integrable Systems, Ascona, Switzerland. 2016.
-- Topology seminar, Cornell University. 2016.
-- Canadian Mathematical Society Winter Meeting. 2015.
-- Workshop on Recent Developments in the Geometry and Combinatorics of Hessenberg Varieties, The Fields Institute. 2015.
-- Canadian Mathematical Society Winter Meeting. 2014.
+### 2021
+
+- [Minicourse on Gelfand-Tsetlin systems and Poisson-Lie groups](https://sites.google.com/view/poissonrep2021/home), NRU HSE Moscow.
+- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer21/abs/pdf/sg-jl.pdf).
+- Edinburgh Geometry (EDGE) seminar, Edinburgh Hodge Institute.
+
+### 2020
+
+- Topology and Geometry seminar, Imperial College London.
+- [Symplectic and Poisson geometry Seminar](https://sites.google.com/view/jpalmer/spg-seminar), University of Illinois at Urbana-Champaign.
+- [Symplectic Joint Seminar in Rio](https://sites.google.com/matematica.ufrj.br/semsimprio), IMPA, UFRJ, UFF and PUC-Rio.
+- [Algebraic Topology Seminar](https://www.math.princeton.edu/events/canonical-bases-toric-degenerations-and-collective-integrable-systems-2020-11-12t180000), Princeton.
+- [Workshop on Torus Actions in Topology](http://www.fields.utoronto.ca/activities/19-20/toric-torus), The Fields Institute.
+- [Gone Fishing Meeting on Poisson Geometry](https://sites.google.com/georgiasouthern.edu/gonefishing2020), Georgia Southern University.
+- [Lie Groups Seminar](https://pi.math.cornell.edu/m/event-list-p/liegroups), Cornell University.
+- [Geometry, Physics, and Representation Theory Seminar](http://mathserver.neu.edu/~robin/Seminars/GPRT/index.html), Northeastern University.
+- [Geometry and Physics Seminar](https://cmsa.fas.harvard.edu/event/7-7-2020-geometry-and-physics-seminar/), Center Of Mathematical Sciences And Applications, Harvard.
+- Toric Topology Research Seminar, The Fields Institute.
+
+### 2019
+
+- Finite dimensional systems in geometry and mathematical physics, Shanghai Jiao Tong University.
+- [Canadian Mathematical Society Summer Meeting](https://www2.cms.math.ca/Events/summer19/abs/emd#jl).
+
+### 2018
+
+- Workshop on cluster algebras, crystal bases, and Poisson geometry, University of Hong Kong.
+- [Geometric aspects of momentum maps and integrability](https://medialibrary.uantwerpen.be/oldcontent/personalpage33566/files/Ascona2018/talk-abstracts/abstract-lane.pdf), Ascona, Switzerland.
+- Algebraic Structures in Topology and Geometry (conference), Riederalp, Switzerland.
+- Symplectic Seminar. Centre Interuniversitaire de Recherches Géométrie et Topologie, Montreal.
+- Symplectic Geometry Seminar, University of Toronto.
+- Interactions between symplectic geometry, combinatorics, and number theory (seminar), University of Cologne.
+
+### 2016
+
+- Canadian Mathematical Society Winter Meeting.
+- Integrable Systems, Ascona, Switzerland.
+- Topology seminar, Cornell University.
+
+### 2015
+
+- Canadian Mathematical Society Winter Meeting.
+- Workshop on Recent Developments in the Geometry and Combinatorics of Hessenberg Varieties, The Fields Institute.
+
+### 2014
+
+- Canadian Mathematical Society Winter Meeting.
 
 ## Leadership and Volunteer Work
 
@@ -121,12 +141,21 @@ Peer-reviewed internal Amazon conferences; not publicly available.
 
 ## Teaching
 
-- **2022** Calculus II.
-- **2021** Introduction to Mathematical Reasoning, Advanced Calculus II.
-- **2020** Undergraduate Combinatorics.
-- **2019** Calculus I, Undergraduate Graph Theory.
-- **2017 - 2019** Complex analysis, general mathematics, programming labs in MATLAB, Maple, and R.
-- **2017** Linear Algebra I, Calculus I.
-- **2016** Linear Algebra I. 
+### McMaster University
+
+- Calculus I and II.
+- Advanced Calculus II.
+- Introduction to Mathematical Reasoning.
+- Undergraduate Combinatorics.
+- Undergraduate Graph Theory.
+
+### University of Geneva
+
+- Complex analysis, general mathematics, programming labs in MATLAB, Maple, and R.
+
+### University of Toronto
+
+- Linear Algebra I.
+- Calculus I.
 
 [Sample teaching material](https://github.com/lanejere5/math).
