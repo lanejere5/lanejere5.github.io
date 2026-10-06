@@ -11,6 +11,7 @@ class: cv
 - **Postdoctoral Fellow, Geometry and Topology**, McMaster University, Department of Mathematics and Statistics, Hamilton, ON. *Sept 2019 – Aug 2022*
     - Advisor: Prof. Megumi Harada.
 - **Postdoctoral Fellow**, The Fields Institute for Research in Mathematical Sciences, Toronto, ON. *Jan 2020 – June 2020*
+    - Cross-appointed with McMaster for the [Thematic Program on Toric Topology and Polyhedral Products](http://www.fields.utoronto.ca/activities/19-20/toric).
 - **Postdoctoral Fellow**, University of Geneva, Section of Mathematics, Geneva, Switzerland. *Sept 2017 – Aug 2019*
     - Advisor: Prof. Anton Alekseev.
 - **Graduate Researcher and Course Instructor**, University of Toronto, Department of Mathematics. *2012 – 2017*
