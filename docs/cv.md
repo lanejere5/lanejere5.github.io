@@ -1,8 +1,6 @@
-# [Jeremy Lane](https://lanejere5.github.io/)
-
-
-## Curriculum Vitae
-
+---
+title: Curriculum Vitae
+---
 
 ### Experience
 
