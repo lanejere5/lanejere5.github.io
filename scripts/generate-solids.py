@@ -7,6 +7,7 @@ colours them with the text colour.
 """
 import itertools
 import math
+import re
 import random
 from pathlib import Path
 
@@ -191,6 +192,120 @@ def draw(name, rot, cx, cy, size, seed):
     return parts
 
 
+# ---------- spinning animation ----------
+#
+# Each solid spins about one of its own symmetry axes, so a short run of frames
+# loops seamlessly. Frames are stacked in one SVG and switched with SMIL, which
+# browsers play even when the SVG is used as a CSS mask.
+
+SPIN_TILT = 0.45          # radians the top is tipped toward the viewer
+SPIN_STEP = 2.5           # degrees per frame
+SPIN_SPEED = 12           # degrees per second
+
+SPIN = {
+    # name: (symmetry axis, order of rotational symmetry about it, tilt)
+    'cube': ((0, 0, 1), 4, SPIN_TILT),
+    'octahedron': ((0, 0, 1), 4, SPIN_TILT),
+    'tetrahedron': ((1, 1, 1), 3, 1.2),                 # look down on the apex
+    'dodecahedron': (None, 5, SPIN_TILT),               # through a face, found below
+    'icosahedron': ((0, 1, PHI), 5, SPIN_TILT),
+}
+
+
+def align_to_y(axis):
+    """Rotation matrix taking the unit vector `axis` to +y (Rodrigues)."""
+    a = norm(axis)
+    y = (0.0, 1.0, 0.0)
+    v = cross(a, y)
+    c = dot(a, y)
+    if dot(v, v) < 1e-12:
+        return ((1, 0, 0), (0, 1, 0), (0, 0, 1)) if c > 0 else ((1, 0, 0), (0, -1, 0), (0, 0, -1))
+    k = 1 / (1 + c)
+    vx, vy, vz = v
+    return ((1 - k*(vy*vy + vz*vz), k*vx*vy - vz, k*vx*vz + vy),
+            (k*vx*vy + vz, 1 - k*(vx*vx + vz*vz), k*vy*vz - vx),
+            (k*vx*vz - vy, k*vy*vz + vx, 1 - k*(vx*vx + vy*vy)))
+
+
+def apply(m, v):
+    return tuple(dot(row, v) for row in m)
+
+
+def spin_frame(name, align, theta, tilt, cx, cy, size):
+    """One view of the solid. Strokes are seeded per edge and per face so they hold steady between frames."""
+    vs0 = vertices(name)
+    r0 = max(math.sqrt(dot(v, v)) for v in vs0)
+    c, s_ = math.cos(theta), math.sin(theta)
+    ct, st = math.cos(tilt), math.sin(tilt)
+    vs = []
+    for v in vs0:
+        x, y, z = apply(align, mul(v, 1 / r0))
+        x, z = c*x + s_*z, -s_*x + c*z
+        y, z = ct*y - st*z, st*y + ct*z
+        vs.append((x, y, z))
+    proj = [(cx + x*size, cy - y*size) for x, y, _ in vs]
+    light = norm(LIGHT)
+
+    visible_edges, hidden_edges, hatches = set(), set(), []
+    for idx, n in faces(vs):
+        edges = {tuple(sorted((idx[i], idx[(i+1) % len(idx)]))) for i in range(len(idx))}
+        if n[2] > 1e-6:
+            visible_edges |= edges
+            shade = dot(n, light)
+            poly = [proj[m] for m in idx]
+            rng = random.Random(f'{name}-face-{sorted(idx)}')
+            if shade < 0.55:
+                spacing = 2.2 + 3.4 * max(shade + 0.3, 0)
+                hatches += hatch(rng, poly, math.radians(-50 + rng.uniform(-8, 8)), spacing, 0.06)
+            if shade < -0.05:
+                hatches += hatch(rng, poly, math.radians(20 + rng.uniform(-8, 8)), 2.8, 0.1)
+        else:
+            hidden_edges |= edges
+    hidden_edges -= visible_edges
+
+    def edge_rng(a, b):
+        return random.Random(f'{name}-edge-{a}-{b}')
+
+    parts = []
+    for a, b in sorted(hidden_edges):
+        parts.append(f'<path d="{wobbly(edge_rng(a, b), proj[a], proj[b], 0.3, 0.5)}" stroke-width="0.9" '
+                     f'stroke-dasharray="1.2 2.2" opacity="0.45"/>')
+    for d in hatches:
+        parts.append(f'<path d="{d}" stroke-width="0.65" opacity="0.85"/>')
+    for a, b in sorted(visible_edges):
+        parts.append(f'<path d="{wobbly(edge_rng(a, b), proj[a], proj[b], 0.45, 1.4)}" stroke-width="1.7"/>')
+    # One decimal place is plenty at this size and keeps the files small.
+    return [re.sub(r'(\d\.\d)\d+', r'\1', p) for p in parts]
+
+
+def spin_svgs(name):
+    """Return (still, animated) SVG documents for a solid."""
+    axis, order, tilt = SPIN[name]
+    if axis is None:                                    # dodecahedron: axis through a face centre
+        axis = faces(vertices(name))[0][1]
+    align = align_to_y(axis)
+    period = 360 / order
+    frames = round(period / SPIN_STEP)
+    dur = period / SPIN_SPEED
+    # Start a third of the way round so the still frame shows the solid at an angle.
+    views = [spin_frame(name, align, math.radians(period * (i / frames + 1 / 3)), tilt, 50, 50, 40)
+             for i in range(frames)]
+
+    still = svg(views[0], 100, 100)
+    groups = []
+    for i, parts in enumerate(views):
+        if i == 0:
+            values, times = '1;0', f'0;{1 / frames:.4f}'
+        else:
+            values, times = '0;1;0' if i < frames - 1 else '0;1', (
+                f'0;{i / frames:.4f};{(i + 1) / frames:.4f}' if i < frames - 1 else f'0;{i / frames:.4f}')
+        anim = (f'<animate attributeName="opacity" values="{values}" keyTimes="{times}" '
+                f'calcMode="discrete" dur="{dur:g}s" repeatCount="indefinite"/>')
+        groups.append(f'<g opacity="{1 if i == 0 else 0}">{anim}\n  ' + '\n  '.join(parts) + '\n  </g>')
+    animated = svg(groups, 100, 100)
+    return still, animated
+
+
 def svg(parts, w, h):
     body = '\n  '.join(parts)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">\n'
@@ -208,22 +323,17 @@ SOLIDS = {
 
 if __name__ == '__main__':
     OUT.mkdir(parents=True, exist_ok=True)
-    for i, (name, rot) in enumerate(SOLIDS.items()):
-        (OUT / f'{name}.svg').write_text(svg(draw(name, rot, 50, 50, 40, seed=i + 1), 100, 100))
-    # Final break: dual pairs either side of the self-dual tetrahedron.
-    layout = [('cube', 50), ('octahedron', 150), ('tetrahedron', 250),
-              ('dodecahedron', 350), ('icosahedron', 450)]
-    row = []
-    for i, (name, x) in enumerate(layout):
-        row += draw(name, SOLIDS[name], x, 50, 40, seed=i + 11)
-    (OUT / 'all.svg').write_text(svg(row, 500, 100))
+    for name in SPIN:
+        still, animated = spin_svgs(name)
+        (OUT / f'{name}.svg').write_text(still)
+        (OUT / f'{name}-spin.svg').write_text(animated)
 
     # Favicon: the exact dodecahedron drawing from the CV, on the page background.
     parts = draw('dodecahedron', SOLIDS['dodecahedron'], 50, 50, 40, seed=4)
     # Colours are the site's themes (src/styles/global.css), inverted so the icon
     # stands out against the browser chrome: dark tile in light mode, light tile in dark.
     style = ('<style>rect{fill:#131312}g{stroke:#f0eee9}'
-             '@media (prefers-color-scheme:dark){rect{fill:#f7f1e5}g{stroke:#1d1a15}}</style>')
+             '@media (prefers-color-scheme:dark){rect{fill:#fbf8f2}g{stroke:#1d1a15}}</style>')
     favicon = svg(parts, 100, 100).replace(' stroke="#000"', '').replace(
         '  <g fill', f'  {style}\n  <rect width="100" height="100" rx="20"/>\n  <g fill', 1)
     (OUT.parent / 'favicon.svg').write_text(favicon)

@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7f1e5;
+  --bg: #fbf8f2;
   --fg: #1d1a15;
   --body: #3b362e;
   --muted: #6f685b;
@@ -286,20 +286,20 @@ h2 {
     var(--rule) center / 100% 0.5px no-repeat;
 }
 
-.cv h2:nth-of-type(2) { --solid: url('/solids/cube.svg'); }
-.cv h2:nth-of-type(3) { --solid: url('/solids/octahedron.svg'); }
-.cv h2:nth-of-type(4) { --solid: url('/solids/tetrahedron.svg'); }
-.cv h2:nth-of-type(5) { --solid: url('/solids/dodecahedron.svg'); }
-.cv h2:nth-of-type(6) { --solid: url('/solids/icosahedron.svg'); }
+/* Cycle through the five solids, so adding a section just continues the pattern.
+   Each one slowly spins; visitors who prefer reduced motion get a still frame. */
+.cv h2:nth-of-type(5n + 2) { --solid: url('/solids/cube-spin.svg'); }
+.cv h2:nth-of-type(5n + 3) { --solid: url('/solids/octahedron-spin.svg'); }
+.cv h2:nth-of-type(5n + 4) { --solid: url('/solids/tetrahedron-spin.svg'); }
+.cv h2:nth-of-type(5n + 5) { --solid: url('/solids/dodecahedron-spin.svg'); }
+.cv h2:nth-of-type(5n + 6) { --solid: url('/solids/icosahedron-spin.svg'); }
 
-/* The final break shows all five together. */
-.cv h2:last-of-type {
-  --solid: url('/solids/all.svg');
-}
-
-.cv h2:last-of-type::before {
-  --symbol: 9.375rem;
-  width: min(16.5rem, 100%);
+@media (prefers-reduced-motion: reduce) {
+  .cv h2:nth-of-type(5n + 2) { --solid: url('/solids/cube.svg'); }
+  .cv h2:nth-of-type(5n + 3) { --solid: url('/solids/octahedron.svg'); }
+  .cv h2:nth-of-type(5n + 4) { --solid: url('/solids/tetrahedron.svg'); }
+  .cv h2:nth-of-type(5n + 5) { --solid: url('/solids/dodecahedron.svg'); }
+  .cv h2:nth-of-type(5n + 6) { --solid: url('/solids/icosahedron.svg'); }
 }
 
 h3 {
@@ -420,6 +420,14 @@ hr {
 
 .cv ul ul {
   margin-top: 0.125rem;
+}
+
+/* A plain detail line under an entry, styled like the detail bullets but without the dash. */
+.cv .note {
+  display: block;
+  margin-top: 0.125rem;
+  font-size: 1.0625rem;
+  color: var(--muted);
 }
 
 .cv ul ul li + li {
