@@ -9,7 +9,8 @@ class: cv
 - **Senior Applied Scientist**, Amazon, Ads, New York, NY *April 2026 – Present*
 - **Applied Scientist**, Amazon, Ads, New York, NY *Aug 2022 – March 2026*
 - **Postdoctoral Fellow**, McMaster University, Department of Mathematics and Statistics, Hamilton, ON *Sept 2019 – Aug 2022*
-  <span class="note">Cross-appointed to the Fields Institute for the [Thematic Program on Toric Topology and Polyhedral Products](http://www.fields.utoronto.ca/activities/19-20/toric), Jan – June 2020</span>
+- **Postdoctoral Fellow**, Fields Institute for Research in Mathematical Sciences, Toronto, ON *Jan 2020 – June 2020*
+  <span class="note">Cross-appointed with McMaster University</span>
 - **Postdoctoral Fellow**, University of Geneva, Section of Mathematics, Geneva, Switzerland *Sept 2017 – Aug 2019*
 - **Graduate Researcher, Course Instructor**, University of Toronto, Department of Mathematics, Toronto, ON *2012 – 2017*
 - **Research Assistant**, University of Regina, Department of Mathematics and Statistics, Regina, SK *May 2012 – Aug 2012*

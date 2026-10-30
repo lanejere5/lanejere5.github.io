@@ -3,17 +3,10 @@ layout: ../layouts/Base.astro
 title: Home
 ---
 
-## About Me
+I'm a scientist with nine years of combined postdoctoral and industry experience in deep learning and mathematics.
 
-I'm a research scientist and applied scientist.
-- At Amazon I develop foundation models for event data and AI agents for advertisers.
-- I have 5 yoe as a math researcher post doctorate, specializing in differential geometry and mathematical physics.
+I have four years of experience training, evaluating, and deploying deep learning models for industry applications: LLM pre-training and post-training, representation learning, supervised learning, and causal inference. I have three years of experience prototyping, developing, and evaluating AI agents, resulting in three external product launches.
 
+I have published in top math research journals, received a Fields Institute postdoctoral fellowship, won best paper award at an internal Amazon conference, and won best thesis award for my PhD dissertation.
 
-## AI and Deep Learning
-
-At Amazon I have shipped multiple production ML systems including ad measurement products, representation learning models, targeting models, foundation models and AI agents. I have built foundation models for predicting causal ad effects, prototyped PB scale data pipelines that informed Ads-wide data strategy, shipped graph neural networks that learn from billions of vertices and trillions of edges, and driven over 700MM ad revenue. I have lead multiple science teams to deliver AI agents and evaluations for production and external customers resulting in three WW launches with millions of users.
-
-## Mathematics
-
-My research in symplectic geometry focused on connections between classical and quantum mechanics via geometric quantization.  I studied constructions of classical commutative integrable systems from non-commuting Hamiltonian Lie group actions. This work combined tools from geometry, topology, Lie theory, analysis, and representation theory.
+I have led teams of up to nine individual contributors, mentored graduate students and industry interns, and taught thousands of students as a course instructor.
