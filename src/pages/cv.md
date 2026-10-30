@@ -156,5 +156,3 @@ Peer-reviewed internal Amazon conferences; not publicly available.
 
 - Linear Algebra I
 - Calculus I
-
-[Sample teaching material](https://github.com/lanejere5/math)
