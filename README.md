@@ -6,7 +6,7 @@ from `main`.
 | Page | File |
 |---|---|
 | Home | `src/pages/index.md` (portrait: `src/assets/portrait.png`) |
-| CV | `src/pages/cv.md` |
+| CV | `src/pages/cv.md` (also builds the PDF at `/cv.pdf`) |
 | Blog posts | `src/content/blog/` |
 
 ## Running the site locally
@@ -24,6 +24,23 @@ npm run dev
 ```
 
 Pages reload automatically as you save. Stop the server with Ctrl+C.
+
+## CV PDF
+
+The downloadable CV (`/cv.pdf`) is generated from `src/pages/cv.md`, so editing that one
+file updates both the web page and the PDF. `scripts/build-cv-pdf.mjs` converts the
+Markdown to LaTeX using `cv/resume.cls` (the same class as the job-hunt CVs) and compiles
+it with [Tectonic](https://tectonic-typesetting.github.io). It runs automatically as the
+first step of `npm run build`, locally and on GitHub.
+
+- **Preview the PDF locally:** `npm run cv:pdf`, then open `public/cv.pdf`. (Needs
+  Tectonic: `brew install tectonic`.) The PDF is a build output and isn't committed.
+- **Keep the CV's Markdown shapes**, since the converter reads them: `##` sections, `###`
+  groups, entries as `- **Title**, Employer, … *dates*`, grey lines as
+  `<span class="note">…</span>`, and papers as a title line followed by
+  `*authors · venue, year*`.
+- **Change the PDF's layout:** edit the LaTeX in `scripts/build-cv-pdf.mjs`. The links
+  under the name are in its `LINKS` list; the PDF deliberately has no email or phone.
 
 ## Adding a blog post (SOP)
 

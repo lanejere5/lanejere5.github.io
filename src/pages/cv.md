@@ -4,6 +4,8 @@ title: Curriculum Vitae
 class: cv
 ---
 
+<p class="cv-download"><a href="/cv.pdf">Download PDF</a></p>
+
 ## Experience
 
 - **Senior Applied Scientist**, Amazon, Ads, New York, NY *April 2026 – Present*

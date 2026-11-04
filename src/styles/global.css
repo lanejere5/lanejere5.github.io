@@ -133,6 +133,19 @@ main {
   }
 }
 
+/* CV PDF link */
+
+.cv-download {
+  margin: 0 0 0.5rem;
+  text-align: right;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.cv-download + h2 {
+  margin-top: 0;
+}
+
 /* Blog */
 
 .post-list li {
@@ -434,7 +447,7 @@ h2 {
 
 /* Each CV section break is a small etching of a Platonic solid (scripts/generate-solids.py),
    set between two hairlines like a classic ornamental rule. */
-.cv h2:not(:first-child)::before {
+.cv h2:not(:first-of-type)::before {
   --symbol: 1.875rem;
   --gap: calc(var(--symbol) / 2 + 0.75rem);
   --rule: linear-gradient(to right,
