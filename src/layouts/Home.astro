@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import Base from './Base.astro';
+import portrait from '../assets/portrait.png';
+
+const { frontmatter } = Astro.props;
+---
+
+<Base frontmatter={frontmatter}>
+  <div class="intro">
+    <Image
+      class="portrait"
+      src={portrait}
+      alt="Portrait of Jeremy Lane"
+      widths={[280, 560]}
+      sizes="(max-width: 480px) 8rem, 13.75rem"
+      loading="eager"
+    />
+    <div class="intro-text">
+      <slot />
+    </div>
+  </div>
+</Base>

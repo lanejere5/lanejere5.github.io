@@ -104,6 +104,35 @@ main {
   font-size: 0.9375rem;
 }
 
+/* Home intro: the summary wraps around the portrait, like a figure in a book. */
+
+.portrait {
+  float: left;
+  width: 13.75rem;
+  height: auto;
+  margin: 0.4rem 1.75rem 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.intro-text > :first-child {
+  margin-top: 0;
+}
+
+.intro::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 480px) {
+  .portrait {
+    float: none;
+    display: block;
+    width: 8rem;
+    margin: 0 0 1.5rem;
+  }
+}
+
 /* Pages dropdown */
 
 .page-menu {
