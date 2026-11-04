@@ -5,7 +5,7 @@ from `main`.
 
 | Page | File |
 |---|---|
-| Home | `src/pages/index.md` (portrait: `src/assets/portrait.png`) |
+| Home | `src/pages/index.md` (portrait: `src/assets/portrait.jpg`) |
 | CV | `src/pages/cv.md` (also builds the PDF at `/cv.pdf`) |
 | Blog posts | `src/content/blog/` |
 

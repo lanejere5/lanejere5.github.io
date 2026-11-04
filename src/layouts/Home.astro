@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Base from './Base.astro';
-import portrait from '../assets/portrait.png';
+import portrait from '../assets/portrait.jpg';
 
 const { frontmatter } = Astro.props;
 ---
@@ -12,6 +12,7 @@ const { frontmatter } = Astro.props;
       class="portrait"
       src={portrait}
       alt="Portrait of Jeremy Lane"
+      width={560}
       widths={[280, 560]}
       sizes="(max-width: 480px) 8rem, 13.75rem"
       loading="eager"
