@@ -4,6 +4,7 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/newsreader/opsz.css';
 import '@fontsource-variable/newsreader/opsz-italic.css';
 import '../styles/global.css';
+import { getPosts } from '../lib/posts';
 
 const { frontmatter } = Astro.props;
 const siteName = 'Jeremy Lane';
@@ -14,12 +15,16 @@ const pageTitle =
 const description =
   frontmatter?.description ?? 'Jeremy Lane: applied scientist and mathematician.';
 
+// The Blog link appears once there is a post to show.
+const hasPosts = (await getPosts()).length > 0;
 const nav = [
   { href: '/', label: 'Home' },
   { href: '/cv/', label: 'CV' },
+  ...(hasPosts ? [{ href: '/blog/', label: 'Blog' }] : []),
 ];
 const path = Astro.url.pathname;
-const currentPage = nav.find(({ href }) => href === path)?.label ?? 'Pages';
+const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+const currentPage = nav.find(({ href }) => isCurrent(href))?.label ?? 'Pages';
 
 // Simple Icons no longer ships LinkedIn, so this is a hand-drawn "in" mark.
 const linkedinPath =
@@ -49,6 +54,7 @@ const social = [
     <meta name="description" content={description} />
     <link rel="canonical" href={new URL(path, Astro.site)} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {hasPosts && <link rel="alternate" type="application/rss+xml" title="Jeremy Lane" href="/rss.xml" />}
     <script is:inline>
       // Apply a saved theme before first paint so there's no flash.
       try {
@@ -68,7 +74,7 @@ const social = [
           </summary>
           <nav aria-label="Pages">
             {nav.map(({ href, label }) => (
-              <a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a>
+              <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>
             ))}
           </nav>
         </details>

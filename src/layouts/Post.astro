@@ -1,0 +1,26 @@
+---
+import 'katex/dist/katex.min.css';
+import type { CollectionEntry } from 'astro:content';
+import Base from './Base.astro';
+import { formatDate } from '../lib/posts';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, date, draft } = post.data;
+---
+
+<Base frontmatter={{ title, description }}>
+  <article class="post">
+    <header class="post-header">
+      <h1>{title}</h1>
+      <p class="post-meta">
+        <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>
+        {draft && <span class="draft-badge">Draft</span>}
+      </p>
+    </header>
+    <slot />
+  </article>
+</Base>
